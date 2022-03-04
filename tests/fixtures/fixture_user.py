@@ -61,7 +61,6 @@ def token_admin(admin):
 @pytest.fixture
 def admin_client(token_admin):
     from rest_framework.test import APIClient
-
     client = APIClient()
     client.credentials(HTTP_AUTHORIZATION=f'Bearer {token_admin["access"]}')
     return client

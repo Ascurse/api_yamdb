@@ -148,3 +148,7 @@ dmypy.json
 # папки со статикой и медиа
 media/
 
+# технические файлы и папки
+rest_test.http
+outhouse/
+
